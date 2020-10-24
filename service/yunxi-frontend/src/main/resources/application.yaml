@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/yunxi?userSSL=true&useUnicode=true&characterEncoding=UTF8&serverTimezone=Hongkong
+    username: liqiqi
+    password: lldj1234567
+  mybatis-plus:
+    global-config:
+      db-config:
+        id-type: auto
+        logic-delete-value: 0
+        logic-not-delete-value: 1
+  application:
+    name: yunxi-backend
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+server:
+  port: 7000
+  servlet:
+    encoding:
+      force-response: true
+      force-request: true
+

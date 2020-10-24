@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: yunxi-gateway
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+server:
+  port: 99
+  servlet:
+    encoding:
+      force-response: true
+      force-request: true
+
